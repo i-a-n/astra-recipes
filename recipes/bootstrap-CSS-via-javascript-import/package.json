@@ -1,12 +1,12 @@
 {
-  "name": "astra-recipes",
+  "name": "astra",
   "version": "0.0.1",
-  "description": "aggressively simple recipes for react apps",
+  "description": "aggressively simple template for react apps",
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build-the-app": "bun build ./source-code/index.jsx --outdir ./web-app/javascript --minify",
-    "watch-the-app": "bun build ./source-code/index.jsx --outdir ./web-app/javascript --minify --watch",
+    "build-the-app": "bun build ./source-code/index.jsx --outdir ./web-app/javascript --minify --asset-naming \"[name].[ext]\"",
+    "watch-the-app": "bun build ./source-code/index.jsx --outdir ./web-app/javascript --minify --watch --asset-naming \"[name].[ext]\"",
     "serve-for-development": "bun index.js"
   },
   "repository": {
@@ -20,6 +20,7 @@
   "license": "Apache-2.0",
   "homepage": "https://github.com/i-a-n/astra",
   "dependencies": {
+    "bootstrap": "^5.3.2",
     "bun": "1.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0"
